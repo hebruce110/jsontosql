@@ -52,7 +52,7 @@ func main() {
 			dataType = "String"
 		}
 		tablesColumn = append(tablesColumn,fmt.Sprintf("`%s` %s",k,dataType))
-		fmt.Println(k,"-----------",reflect.TypeOf(value).Kind(),"-----------",reflect.TypeOf(value).Name())
+		//fmt.Println(k,"-----------",reflect.TypeOf(value).Kind(),"-----------",reflect.TypeOf(value).Name())
 	}
 	sql := fmt.Sprintf("\n**********JSON CONVERT TO CREATE TABLE SQL **********\n\nCREATE TABLE IF NOT EXISTS jsonTableName (\n%s\n)\n\n******************************",strings.Join(tablesColumn,",\n"))
 	fmt.Println(sql)
