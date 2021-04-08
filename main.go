@@ -16,7 +16,6 @@ import (
 func main() {
 	flag.String("Tool","","Convert json string to sql statement to create table")
 	jsonStr := flag.String("json","","json string, for example -json '{\"key\":\"value\"}'")
-	fmt.Println("json-----",*jsonStr)
 	jsonPath := flag.String("json_path","","json file path,for example /tmp/test.json。If json parameter is specified, the content of json parameter will be read first")
 	flag.Parse()
 	if *jsonStr == "" {
