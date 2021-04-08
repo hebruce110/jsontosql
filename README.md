@@ -1,6 +1,17 @@
 # jsontosql
 json to sql tool
 
+``` 
+(base) ➜  ~ jsontosql-osx -h
+Usage of jsonToSql:
+  -Tool string
+    	Convert json string to sql statement to create table
+  -json string
+    	json string, for example -json '{"key":"value"}'
+  -json_path string
+    	json file path,for example /tmp/test.json。If json parameter is specified, the content of json parameter will be read first
+```
+
 # Demo1
 
 json file, test.json:
