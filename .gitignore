@@ -1,4 +1,5 @@
 .idea
+.idea/*
 *.log
 builds
 build_dist
