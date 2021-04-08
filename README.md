@@ -3,7 +3,7 @@ json to sql tool
 
 # Demo1
 
-json file:
+json file, test.json:
 
 ``` 
 {
